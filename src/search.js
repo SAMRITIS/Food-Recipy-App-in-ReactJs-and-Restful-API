@@ -3,7 +3,7 @@ import Food from './Food'
 import React, { useState} from 'react';
 import h from './h.png';
 import Foodinfo from './Foodinfo';
-var axios = require("axios").default;
+var axios = require("axios");
 
 
 function Search() {
