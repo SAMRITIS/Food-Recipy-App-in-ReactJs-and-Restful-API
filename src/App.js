@@ -12,7 +12,7 @@ function App() {
           </button>
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-              <li className="nav-item"><a className="nav-link" aria-current="page" href="#" style={{color : "#000000"}}>Developed By : Saurabh Singh</a></li>
+              <li className="nav-item"><a className="nav-link" aria-current="page" href="https://www.linkedin.com/in/saurabh-singh-95b355159" style={{color : "#000000"}}>Developed By : Saurabh Singh</a></li>
               {/* <li className="nav-item"><a className="nav-link" href="#" style={{color : "#000000"}}>Link</a></li> */}
             </ul>
           </div>
