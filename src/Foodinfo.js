@@ -11,15 +11,15 @@ function Foodinfo(props) {
        
             
             
-      <div className=" " style={{backgroundColor : "pink", borderRadius : "50px"}}>
+      <div className="" style={{backgroundColor : "black", borderRadius : "10px"}}>
            <div className="row">
             <div className="col-sm-6">
-               <div className="m-5">
+               <div className="" style = {{color : "yellow"}}>
                   <img  src={props.selectedFood.image} alt="Card  cap" style={{ borderRadius : "20px", padding : "5px", height: "300px",  width : "350px"}} />
-                  <p style={{fontWeight: "bold"}}> Dish Name : {props.selectedFood.label} </p>
-                  <p style={{fontWeight: "bold"}}> Dish Type : {props.selectedFood.type}  </p>
-                  <p style={{fontWeight: "bold"}}> Dish Location : {props.selectedFood.dishType}</p>
-                  <p style={{fontWeight: "bold"}}>Ingrediants : </p>
+                  <p style={{fontWeight: "bold", color : "red"}}> Dish Name : {props.selectedFood.label} </p>
+                  <p style={{fontWeight: "bold", color : "red"}}> Dish Type : {props.selectedFood.type}  </p>
+                  <p style={{fontWeight: "bold", color : "red"}}> Dish Location : {props.selectedFood.dishType}</p>
+                  <p style={{fontWeight: "bold", color : "red"}}>Ingrediants : </p>
                   {
                       props.selectedFood.ingridents.map(function(item, i){
                         return  <div key={i}>
@@ -31,7 +31,8 @@ function Foodinfo(props) {
                </div>  
             </div>
             <div className="col-sm-6">
-               <div className="m-5">
+               <div className="" style = {{color : "yellow"}}>
+               <p style={{fontWeight: "bold", color : "red"}}> Nutrition :  </p>
                 {
                     props.selectedFood.digest.map(function(item, i){
                       return  <p key={i}>{item.label} : {item.total}</p>

@@ -1,7 +1,8 @@
 body{
     background-image: url("g.jpg");
-    height: 500px; /* You must set a specified height */
-    width: 100vw;
+    height: 1000px; /* You must set a specified height */
+    width: 104vw !important;
+    
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover; /* Resize the background image to cover the entire container */
@@ -19,7 +20,7 @@ button {
 input {
     outline : none;
     border : none;
-    border-bottom: 1px solid black;
+    border-bottom: 2px solid black !important;
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px ;
     font-size: 30px !important;

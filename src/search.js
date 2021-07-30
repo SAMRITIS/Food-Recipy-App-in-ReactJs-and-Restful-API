@@ -1,9 +1,9 @@
 import './search.css';
 import Food from './Food'
 import React, { useState} from 'react';
-import h from './h.png';
+import h from './food.png';
 import Foodinfo from './Foodinfo';
-var axios = require("axios");
+import axios from 'axios'
 
 
 function Search() {
@@ -21,6 +21,7 @@ function Search() {
         .then(response => {
          if(response)
          {
+            console.log(response)
             var temp = []
             for(let i =0 ;i<response.data.hits.length;i++)
             {
@@ -47,8 +48,8 @@ function Search() {
   }
   return (
     <React.Fragment>
-       <div className="container p-3" style={{marginTop : "35vh"}}>
-                  <div className="row ml-5">
+       <div className="container" style={{marginTop : "35vh"}}>
+                  <div className="row">
                     <div className="col-sm row d-flex justify-content-center text-center bounce-in-top">
                        <h3>Your Dish is Here</h3>
                     </div>
