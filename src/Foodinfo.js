@@ -11,10 +11,10 @@ function Foodinfo(props) {
        
             
             
-      <div className="" style={{backgroundColor : "black", borderRadius : "10px"}}>
+      <div className="p-0 m-0" style={{backgroundColor : "black", borderRadius : "10px"}}>
            <div className="row">
             <div className="col-sm-6">
-               <div className="" style = {{color : "yellow"}}>
+               <div className="m-5" style = {{color : "yellow"}}>
                   <img  src={props.selectedFood.image} alt="Card  cap" style={{ borderRadius : "20px", padding : "5px", height: "300px",  width : "350px"}} />
                   <p style={{fontWeight: "bold", color : "red"}}> Dish Name : {props.selectedFood.label} </p>
                   <p style={{fontWeight: "bold", color : "red"}}> Dish Type : {props.selectedFood.type}  </p>
@@ -31,7 +31,7 @@ function Foodinfo(props) {
                </div>  
             </div>
             <div className="col-sm-6">
-               <div className="" style = {{color : "yellow"}}>
+               <div className="m-5" style = {{color : "yellow"}}>
                <p style={{fontWeight: "bold", color : "red"}}> Nutrition :  </p>
                 {
                     props.selectedFood.digest.map(function(item, i){
